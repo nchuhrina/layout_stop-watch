@@ -1,0 +1,48 @@
+.watch_minute, .watch_second {
+  position: absolute;
+  width: 15px;
+  border-radius: 8px; }
+
+.watch_center {
+  position: absolute;
+  z-index: 2;
+  background-color: cornflowerblue;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  top: calc((65%) - 35px/2);
+  left: 50%; }
+
+.watch_minute {
+  z-index: 0;
+  height: 175px;
+  background-color: crimson;
+  top: calc((65%) - 175px);
+  left: calc((50%) + 15px/2);
+  -webkit-animation: tik-tok 3600s linear infinite;
+          animation: tik-tok 3600s linear infinite;
+  transform-origin: bottom; }
+
+.watch_second {
+  z-index: 1;
+  height: 350px;
+  background-color: cornflowerblue;
+  left: calc((50%) + 15px/2);
+  top: calc((65%) - 350px);
+  -webkit-animation: tik-tok 60s linear infinite;
+          animation: tik-tok 60s linear infinite;
+  transform-origin: bottom; }
+
+@-webkit-keyframes tik-tok {
+  0% {
+    transform: rotateZ(0deg); }
+  100% {
+    transform: rotateZ(360deg); } }
+
+@keyframes tik-tok {
+  0% {
+    transform: rotateZ(0deg); }
+  100% {
+    transform: rotateZ(360deg); } }
+
+/*# sourceMappingURL=main.css.map */
